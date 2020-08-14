@@ -1,7 +1,52 @@
-h1{
-	text-align: center;
-	color: brown;
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+  margin: 0;
+  font-size: 100%;
 }
-h2{
-	color: blueviolet;
+body {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+section {
+  padding-top: 90px;
+}
+.section-header {
+  margin-bottom: 3%;
+}
+h2 {
+  color: brown;
+}
+.header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: #695f5f;
+  color: blanchedalmond;
+  z-index: 999;
+}
+.header-logo img {
+  width: 70px;
+  height: auto;
+}
+.header-nav-bar {
+  text-align: right;
+  padding-top: 20px;
+}
+.header-nav-bar a {
+  padding: 0 5px 0;
+  color: blanchedalmond;
+}
+.header-nav-bar a:hover,
+.header-nav-bar a:focus {
+  font-size: 1.1em;
+  filter: drop-shadow(0 0 4px rgba(128, 0, 0, 0.5));
+  padding-top: 0;
+  transition: all 0.2s;
 }
