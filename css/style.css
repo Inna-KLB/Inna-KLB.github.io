@@ -91,6 +91,18 @@ i,
   padding-top: 0;
   transition: all 0.2s;
 }
+.knowledges__item img {
+  width: 100px;
+  height: 100px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.knowledges__item progress {
+  background-color: #791e1e;
+}
+.knowledges__item progress ::-ms-value {
+  background-color: #695f5f;
+}
 .portfolio {
   margin-bottom: 5%;
 }
@@ -128,18 +140,17 @@ i,
   border-radius: 20px;
 }
 .footer {
-  height: 15vh;
+  height: 100%;
   color: #ffffff;
   background-color: #010101;
   padding-top: 3%;
+  padding-bottom: 1%;
 }
 .footer_links {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  padding-left: 15%;
 }
 .footer_links_icons {
-  padding-right: 10%;
+  padding-left: 2%;
 }
 .footer_links_icons:hover {
   color: #791e1e;
