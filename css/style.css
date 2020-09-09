@@ -14,11 +14,12 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
+  color: inherit;
 }
 section {
   padding-top: 90px;
 }
-.section-header {
+.section__header {
   margin-bottom: 3%;
 }
 h2 {
@@ -72,54 +73,93 @@ i,
   color: blanchedalmond;
   z-index: 999;
 }
-.header-logo img {
+.header-logo__img {
   width: 70px;
   height: auto;
 }
-.header-nav-bar {
+.header-menu {
   text-align: right;
   padding-top: 20px;
 }
-.header-nav-bar a {
+.header-menu__link {
   padding: 0 5px 0;
   color: blanchedalmond;
 }
-.header-nav-bar a:hover,
-.header-nav-bar a:focus {
+.header-menu__link:hover,
+.header-menu__link:focus {
   font-size: 1.1em;
   filter: drop-shadow(0 0 4px rgba(128, 0, 0, 0.5));
   padding-top: 0;
   transition: all 0.2s;
 }
-.knowledges__item img {
+.knowledges__item {
+  padding: 4%;
+}
+.knowledges__item:hover,
+.knowledges__item:focus {
+  border: #791e1e 1px solid;
+}
+.knowledges__img {
   width: 100px;
   height: 100px;
   margin-top: 5%;
   margin-bottom: 3%;
 }
-.knowledges__item progress {
-  background-color: #791e1e;
+.knowledges .progress {
+  background: #aeaeae;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 13px;
+  margin: 3% auto;
 }
-.knowledges__item progress ::-ms-value {
-  background-color: #695f5f;
+.knowledges .progress__value {
+  box-shadow: 40px 40px 40px 10px #fa2828;
+  border-radius: 100px;
+  background: #000100;
+  color: #fffff1;
+  text-align: center;
+}
+.knowledges .progress__value_eighty {
+  width: 80%;
+}
+.knowledges .progress__value_seventy-five {
+  width: 75%;
+}
+.knowledges .progress__value_thirty {
+  width: 30%;
+}
+.knowledges .progress__value_twenty-five {
+  width: 25%;
+}
+.knowledges .progress__value_seventy {
+  width: 70%;
+}
+.knowledges .progress__value_fourty-five {
+  width: 45%;
+}
+.knowledges .progress__value_fifty {
+  width: 50%;
 }
 .portfolio {
   margin-bottom: 5%;
 }
-.portfolio_description {
+.portfolio__description {
   margin-top: 3%;
   margin-bottom: 2%;
 }
-.portfolio_scrin {
+.portfolio__scrinshoot {
   position: relative;
   background: blanchedalmond url("/img/portfolio/Elena.png") no-repeat;
   background-size: 100%;
 }
-.portfolio_scrin:hover a {
+.portfolio__scrinshoot:hover a {
   opacity: 1;
   transition-delay: 0.5s;
 }
-.portfolio_scrin:hover .overlay {
+.portfolio__scrinshoot:hover .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -128,7 +168,7 @@ i,
   background-color: rgba(0, 0, 0, 0.8);
   transition: background-color ease-in-out 0.7s;
 }
-.portfolio_scrin a {
+.portfolio__link {
   display: block;
   width: 50%;
   color: blanchedalmond;
@@ -146,15 +186,12 @@ i,
   padding-top: 3%;
   padding-bottom: 1%;
 }
-.footer_links {
-  padding-left: 15%;
+.footer__text_padding_left {
+  padding-left: 16%;
 }
-.footer_links_icons {
-  padding-left: 2%;
-}
-.footer_links_icons:hover {
+.footer__link:hover {
   color: #791e1e;
 }
-.footer_links_icons i {
+.footer__link i {
   font-size: 1.1em;
 }
