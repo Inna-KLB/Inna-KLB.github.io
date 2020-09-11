@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>My portfoio</title>
+	<title>Portfolio of Inna Kolbneva</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,15 +13,13 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-4 header-logo">
+				<!-- <div class="col-xl-4 header-logo">
 					<a href="#" class="header-logo__link"><img src="img/logo.png" alt="Логотип" class="header-logo__img"></a>
-				</div>
+				</div> -->
 				<div class="header-menu col-xl-4 offset-xl-4">
 					<nav>
-						<a href="#about_me" class="header-menu__link">Обо мне</a>
-						|
-						<a href="#knowledges" class="header-menu__link"> Знания</a>   
-						|
+						<a href="#about-me" class="header-menu__link">О себе</a><span>|</span>
+						<a href="#knowledges" class="header-menu__link"> Знания</a><span>|</span>
 						<a href="#portfolio" class="header-menu__link"> Портфолио</a>
 					</nav>
 				</div>
@@ -28,22 +27,49 @@
 		</div>
 	</header>
 
+	<!-- *Main section -->
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 main__photo">
+					<img src="http://dummyimage.com/400" alt="Фото" class="main__img">
+				</div>
+				<div class="col-xl-6 main__text">
+					<h1 class="main__header">Колбнева Инна</h1>
+					<p class="main__paragraph">Hello, World! Меня зовут Инна, и я - HTML-верстальщик.</p>
+					<a href="/doc/Колбнева_Инна_Алексеевна.pdf" target="_blank" class="main__button">Скачать резюме</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 	<!-- *Section About me -->
 	<section id="about-me">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 section__header">
-					<h2 class="text-center">Обо мне</h2>
+					<h2 class="text-center">О себе</h2>
 				</div>
 			</div> <!-- /row -->
 		</div> <!-- /container-->
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-4 ">
-					<img src="http://dummyimage.com/400" alt="Фото">
-				</div>
-				<div class="col-xl-6 offset-xl-1">
-					<p>Всем привет! Меня зовут Инна, и я - HTML-верстальщик.<br>Имею активную жизненную позицию мотивирована на работу и профессиональное развитие, быстро обучаюсь, исполнительна, ответственно отношусь к поставленным задачам. </p>
+				<!-- <div class="col-xl-4 ">
+				<img src="http://dummyimage.com/400" alt="Фото">
+				</div>	 -->
+				<div class="col-xl-12">
+					<p>Меня зовут Инна, и я – junior HTML-верстальщик. На протяжении 4-ех лет я работала поваром в ресторанах Москвы, но бросила поварскую карьеру ради продвижение в мире IT.</p>
+					<p>И вот уже 8 месяцев я шагаю в сторону front-end разработки.  Изучаю html, css, js, верстаю сайты для улучшения своих навыков. В течение 3-ёх месяцев проходила практику в компании <a href="https://crystal-digital.ru/" target="_blank">Crystal Digital</a> , где занималась версткой страниц сайта, помогала составлять рабочие инструкции, а на последнем месяце стажировки помогала обучать других стажеров.</p>
+					<p>Все свое свободное время я посвящаю изучению новых технологий и практикуюсь. Чтение перед сном документации БЭМ методологии уже любимое времяпрепровождение.)</p>
+					<p>Несколько рандомных фактов о себе: </p>	
+					<ul>
+						<li>не люблю делать задачи в самый последний момент. «Чем раньше-тем лучше» - это про меня;</li>
+						<li>люблю комментировать код;</li>
+						<li>если не укладываюсь в срок, то в ущерб себе выполняю задачу вне рабочего времени; </li>
+						<li>быстро обучаюсь – и это действительно так. Например, когда меня взяли в ресторан поваром, я была тем еще новичком, не умеющим даже нож держать правильно. Но за год я себя так хорошо проявила, что стала сначала бригадиром холодного цеха, а потом и вообще работала над новым меню с бренд-шефом , который несколько раз в год прилетал из Нью-Йорка (Нью-Йорка, КАРЛ!!);</li>
+						<li>ответственно подхожу к решению задач и делаю все возможное и невозможное для их выполнения.</li>
+					</ul>	
 				</div>
 			</div> <!-- /row -->
 		</div> <!-- /container-->
@@ -61,16 +87,16 @@
 		<div class="container knowledges">
 			<div class="row">
 				<div class="col-10 offset-1">
-					<p>Описание скиллов. Может сделать при нажатии на иконку технологии всплывающее окно, где будет описано, что именно я там могу?</p>
+					<p>Помимо нижеперечисленных пунктов в копилку своих знаний можно отнести: Gulp, Бэм-методология, работа с cms Wordpress.  </p>
 				</div>
-				<div class="col-xl-3 knowledges__item text-center">
+				<div class="col-xl-3 offset-xl-1 knowledges__item text-center">
 					<img src="img/skills/html.jpg" alt="html" class="knowledges__img">
 					<div class="progress">
 						<div class="progress__value progress__value_eighty">80%</div>
 					</div>
 				</div>
 				<div class="col-xl-3 knowledges__item text-center">
-					<img src="img/skills/css.jpg" alt="css" class="knowledges__img">
+					<img src="img/skills/css3-1.jpg" alt="css" class="knowledges__img">
 					<div class="progress">
 						<div class="progress__value progress__value_seventy-five">75%</div>
 					</div>
@@ -94,16 +120,12 @@
 					</div>
 				</div>
 				<div class="col-xl-3 knowledges__item text-center">
-					<img src="img/skills/flexbox1.jpg" alt="Flex" class="knowledges__img">
+					<img src="img/skills/Flexbox1.jpg" alt="Flex" class="knowledges__img">
 					<div class="progress">
 						<div class="progress__value progress__value_seventy">70%</div>
 					</div>
 				</div>
-				<!-- <div class="col-xl-3 knowledges__item text-center">
-					<img class="img__height" src="img/skills/gulp.jpg" alt="gulp">
-					<progress value="25" max="100"></progress>
-				</div> -->
-				<div class="col-xl-3 offset-xl-2 knowledges__item text-center">
+				<div class="col-xl-3 offset-xl-1 knowledges__item text-center">
 					<img src="img/skills/git.jpg" alt="git" class="knowledges__img">
 					<div class="progress">
 						<div class="progress__value progress__value_fourty-five">45%</div>
@@ -146,12 +168,12 @@
 				</div>
 				<div class="col-xl-4 offset-xl-1 portfolio__scrinshoot">
 					<div class="overlay">
-						<a class="portfolio__link" href="/Furniture_Elena/" target="_blank">Посмотреть</a>
+						<a class="button portfolio__link" href="/Furniture_Elena/" target="_blank">Посмотреть</a>
 					</div>
 				</div>
 				<div class="col-xl-4 portfolio__scrinshoot">
 					<div class="overlay">
-						<a class="portfolio__link" href="/Furniture_Elena/" target="_blank">Посмотреть</a>
+						<a class="button portfolio__link" href="/Furniture_Elena/" target="_blank">Посмотреть</a>
 					</div>
 				</div>
 				<div class="portfolio__description col-xl-7 offset-xl-1">
@@ -170,7 +192,7 @@
 				</div>
 				<div class="col-xl-4 offset-xl-1 portfolio__scrinshoot">
 					<div class="overlay">
-						<a class="portfolio__link" href="/Furniture_Elena/" target="_blank">Посмотреть</a>
+						<a class="button portfolio__link" href="/Furniture_Elena/" target="_blank">Посмотреть</a>
 					</div>
 				</div>
 			</div> <!-- /row -->

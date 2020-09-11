@@ -5,7 +5,13 @@
   font-size: 100%;
 }
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 25px;
   font-size: 16px;
+  color: #fff;
+  background-color: #1A1A1D;
+  background-image: url("/img/background/black-felt.png");
 }
 a {
   text-decoration: none;
@@ -18,12 +24,38 @@ a:focus {
 }
 section {
   padding-top: 90px;
+  min-height: 100vh;
 }
 .section__header {
   margin-bottom: 3%;
 }
+h1,
 h2 {
-  color: brown;
+  font-family: 'Montserrat', sans-serif;
+  color: #C3073F;
+}
+h2 {
+  text-transform: uppercase;
+}
+.button {
+  display: block;
+  color: #f1e4e7;
+  background-color: #950740;
+  text-align: center;
+  padding: 12px 35px;
+  border-radius: 20px;
+}
+.button:hover,
+.button:focus {
+  background-color: #950740;
+}
+.base-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+.base-header {
+  font-family: 'Montserrat', sans-serif;
 }
 @font-face {
   font-family: 'icomoon';
@@ -69,9 +101,9 @@ i,
   width: 100%;
   height: 70px;
   position: fixed;
-  background-color: #695f5f;
-  color: blanchedalmond;
-  z-index: 999;
+  background-color: #4E4E50;
+  color: #fff;
+  z-index: 100;
 }
 .header-logo__img {
   width: 70px;
@@ -82,22 +114,67 @@ i,
   padding-top: 20px;
 }
 .header-menu__link {
-  padding: 0 5px 0;
-  color: blanchedalmond;
+  padding: 0 5px 2px;
+  font-weight: 600;
 }
 .header-menu__link:hover,
-.header-menu__link:focus {
-  font-size: 1.1em;
-  filter: drop-shadow(0 0 4px rgba(128, 0, 0, 0.5));
-  padding-top: 0;
-  transition: all 0.2s;
+.header-menu__link:focus,
+.header-menu__link:active {
+  border-bottom: 3px solid #6F2232;
+  transition: 0.35s ease-out border;
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+.main__text {
+  padding: 8% 5%;
+}
+.main__button {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 13px 40px;
+  margin-top: 5%;
+  text-align: center;
+  background: #950740;
+  box-shadow: 5px 5px 0 #6F2232;
+  outline: none;
+  transition: 1.5s;
+}
+.main__button:before,
+.main__button:after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  left: -50%;
+  margin-top: -100px;
+  top: 50%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: -1;
+  transform: scale(0);
+}
+.main__button:before {
+  background: #f1e4e7;
+  transition: 0.8s ease-out;
+}
+.main__button:after {
+  transition: 0.4s ease-in 0.3s;
+}
+.main__button:hover {
+  color: #1A1A1D;
+}
+.main__button:hover:before,
+.main__button:hover:after {
+  opacity: 1;
+  transform: scale(4);
 }
 .knowledges__item {
   padding: 4%;
-}
-.knowledges__item:hover,
-.knowledges__item:focus {
-  border: #791e1e 1px solid;
 }
 .knowledges__img {
   width: 100px;
@@ -106,20 +183,17 @@ i,
   margin-bottom: 3%;
 }
 .knowledges .progress {
-  background: #aeaeae;
-  justify-content: flex-start;
+  background: #fff;
   border-radius: 100px;
   align-items: center;
   position: relative;
-  display: flex;
   height: 13px;
   margin: 3% auto;
 }
 .knowledges .progress__value {
-  box-shadow: 40px 40px 40px 10px #fa2828;
   border-radius: 100px;
-  background: #000100;
-  color: #fffff1;
+  background: #6F2232;
+  color: #fff;
   text-align: center;
 }
 .knowledges .progress__value_eighty {
@@ -152,7 +226,7 @@ i,
 }
 .portfolio__scrinshoot {
   position: relative;
-  background: blanchedalmond url("/img/portfolio/Elena.png") no-repeat;
+  background: #6F2232 url("/img/portfolio/Elena.png") no-repeat;
   background-size: 100%;
 }
 .portfolio__scrinshoot:hover a {
@@ -169,19 +243,12 @@ i,
   transition: background-color ease-in-out 0.7s;
 }
 .portfolio__link {
-  display: block;
   width: 50%;
-  color: blanchedalmond;
-  background-color: brown;
   opacity: 0;
-  text-align: center;
-  padding: 12px 35px;
   margin: 20% auto;
-  border-radius: 20px;
 }
 .footer {
   height: 100%;
-  color: #ffffff;
   background-color: #010101;
   padding-top: 3%;
   padding-bottom: 1%;
@@ -190,7 +257,7 @@ i,
   padding-left: 16%;
 }
 .footer__link:hover {
-  color: #791e1e;
+  color: #6F2232;
 }
 .footer__link i {
   font-size: 1.1em;
