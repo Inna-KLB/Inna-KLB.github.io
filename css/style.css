@@ -57,6 +57,11 @@ h2 {
 .base-header {
   font-family: 'Montserrat', sans-serif;
 }
+.base-logo {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Sacramento', cursive;
+}
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot?j7er8y');
@@ -108,6 +113,16 @@ i,
 .header-logo__img {
   width: 70px;
   height: auto;
+}
+.header-logo__text {
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Sacramento', cursive;
+}
+.header-logo__text:hover {
+  border-bottom: 3px solid #6F2232;
+  transition: 0.35s ease-out border;
 }
 .header-menu {
   text-align: right;
@@ -254,7 +269,7 @@ i,
   padding-bottom: 1%;
 }
 .footer__text_padding_left {
-  padding-left: 16%;
+  padding-left: 15%;
 }
 .footer__link:hover {
   color: #6F2232;

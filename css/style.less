@@ -71,6 +71,11 @@ h2{
 .base-header{
     font-family: 'Montserrat', sans-serif;
 }
+.base-logo{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Sacramento', cursive;
+}
 // *Icomoon
 @font-face {
     font-family: 'icomoon';
@@ -127,9 +132,21 @@ h2{
     color: @text;
     z-index: 100;
     &-logo{
+        // &__link{
+        // }
         &__img{
             width: 70px;
             height: auto;
+        }
+        &__text{
+            // display: inline-block;
+            padding-top: 30px;
+            .base-logo;
+            &:hover{
+                border-bottom: 3px solid @links;
+                transition: 0.35s ease-out border;
+                // color: @base-btn;
+            }
         }
     }
     &-menu{
@@ -311,7 +328,7 @@ h2{
     padding-bottom: 1%; 
     &__text{
         &_padding_left{
-            padding-left: 16%;
+            padding-left: 15%;
         }
     }
     &__name{
