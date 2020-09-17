@@ -139,8 +139,8 @@ h2{
             height: auto;
         }
         &__text{
-            // display: inline-block;
-            padding-top: 30px;
+            display: inline-block;
+            padding-top: 20px;
             .base-logo;
             &:hover{
                 border-bottom: 3px solid @links;
@@ -230,55 +230,15 @@ h2{
 
 // *Section Knowledges
 .knowledges{
-    &__item{
-        padding: 4%;
-    }
-    &__img{
-        width: 100px;
-        height: 100px;
-        margin-top: 5%;
-        margin-bottom: 3%;
-    }
-    .progress {
-    background: @progress-bg;
-    // justify-content: flex-start;
-    border-radius: 100px;
-    align-items: center;
-    position: relative;
-    // display: flex;
-    height: 13px;
-    margin: 3% auto;
-    &__value{
-        // box-shadow: 0 10px 40px 10px rgb(228, 222, 222);
-        border-radius: 100px;
-        background: @value-bg;
-        color: @value-color;
-        // height: 13px;
-        text-align: center;
-        &_eighty{
-            width: 80%;
+    .diagramm{
+        &__text{
+            font-size: 8px;
+            line-height: 1.5;
+            
         }
-        &_seventy-five{
-            width: 75%;
-        }
-        &_thirty{
-            width: 30%;
-        }
-        &_twenty-five{
-            width: 25%;
-        }
-        &_seventy{
-            width: 70%;
-        }
-        &_fourty-five{
-            width: 45%;
-        }
-        &_fifty{
-            width: 50%;
-        }
-        }
-    }    
-}
+    } 
+}         
+
 
 // *Section Portfolio
 .portfolio{
@@ -347,4 +307,9 @@ h2{
     }
 }
 
-
+.donut {
+}
+.donut-ring {
+}
+.donut-segment {
+}

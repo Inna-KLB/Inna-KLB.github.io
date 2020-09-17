@@ -115,7 +115,8 @@ i,
   height: auto;
 }
 .header-logo__text {
-  padding-top: 30px;
+  display: inline-block;
+  padding-top: 20px;
   font-size: 30px;
   font-weight: 600;
   font-family: 'Sacramento', cursive;
@@ -188,49 +189,9 @@ i,
   opacity: 1;
   transform: scale(4);
 }
-.knowledges__item {
-  padding: 4%;
-}
-.knowledges__img {
-  width: 100px;
-  height: 100px;
-  margin-top: 5%;
-  margin-bottom: 3%;
-}
-.knowledges .progress {
-  background: #fff;
-  border-radius: 100px;
-  align-items: center;
-  position: relative;
-  height: 13px;
-  margin: 3% auto;
-}
-.knowledges .progress__value {
-  border-radius: 100px;
-  background: #6F2232;
-  color: #fff;
-  text-align: center;
-}
-.knowledges .progress__value_eighty {
-  width: 80%;
-}
-.knowledges .progress__value_seventy-five {
-  width: 75%;
-}
-.knowledges .progress__value_thirty {
-  width: 30%;
-}
-.knowledges .progress__value_twenty-five {
-  width: 25%;
-}
-.knowledges .progress__value_seventy {
-  width: 70%;
-}
-.knowledges .progress__value_fourty-five {
-  width: 45%;
-}
-.knowledges .progress__value_fifty {
-  width: 50%;
+.knowledges .diagramm__text {
+  font-size: 8px;
+  line-height: 1.5;
 }
 .portfolio {
   margin-bottom: 5%;
