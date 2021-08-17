@@ -4,8 +4,6 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
-# Dump file
-*.stackdump
 
 # Folder config file
 [Dd]esktop.ini
@@ -22,3 +20,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+/node_modules

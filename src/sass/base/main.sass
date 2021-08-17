@@ -1,0 +1,45 @@
+@import 'theme'
+@import '../components/_header'
+@import '../components/_main-section'
+@import '../components/_about'
+@import '../components/_knowledges'
+@import '../components/_portfolio'
+@import '../components/_footer'
+
+*
+  margin: 0
+  padding: 0
+  font-weight: normal
+  box-sizing: border-box
+
+html
+  font-size: 16px
+  line-height: 1.5
+
+body
+  color: $text
+  background-color: $main-bg
+  background-image: url('../img/background/black-felt.png')
+
+a
+  text-decoration: none
+  color: inherit
+  &:hover, &:focus
+    text-decoration: none
+    color: inherit
+
+h1, h2
+  color: $header-color
+
+h2
+  font-size: 1.7rem
+  // font-weight: 600
+  text-transform: uppercase
+
+section
+  padding-top: 5%
+  height: 100vh
+
+main, header, footer
+  padding-left: 7%
+  padding-right: 7%
