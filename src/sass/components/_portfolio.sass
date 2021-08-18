@@ -1,2 +1,24 @@
 #portfolio
-  background-color: blue
+  .project
+    margin-bottom: 3%
+    &__description
+      flex-basis: 50%
+      align-self: center
+    &__img
+      flex-basis: 40%
+      & img
+        width: 100%
+      & .links
+        margin-top: 2%
+        text-align: center
+        & .link
+          cursor: pointer
+          font-size: 1.5rem
+          color: $btn-text 
+          background-color: transparent 
+          text-align: center 
+          padding: 0.5% 4% 0 
+          &:hover
+            border-radius: 5px 
+            background-color: $links
+            

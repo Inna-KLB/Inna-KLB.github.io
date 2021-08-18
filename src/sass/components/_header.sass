@@ -4,19 +4,19 @@
   // position: fixed 
   background-color: $header-bg 
   color: $text 
-  display: flex
+  // display: flex
   align-items: center
-  justify-content: space-between
+  // justify-content: space-between
   // z-index: 100 
   &__logo
     font-size: 1.5rem
     flex-basis: 45%
+    font-family: 'Sacramento', cursive
+    font-weight: 600
     &:hover
-      border-bottom: 1px solid $links
-      transition: 0.35s ease-out border
+      color: $links
+      transition: 0.35s ease-out color
   &__menu
-    flex-basis: 25%
-    &-item
-      font-weight: 600
-      &:hover
-        color: $links
+    flex-basis: 45%
+    text-align: right
+  

@@ -15,11 +15,12 @@
 html
   font-size: 16px
   line-height: 1.5
+  font-family: 'Open Sans', sans-serif
 
 body
   color: $text
   background-color: $main-bg
-  background-image: url('../img/background/black-felt.png')
+  background-image: url('../img/black-felt.png')
 
 a
   text-decoration: none
@@ -31,15 +32,28 @@ a
 h1, h2
   color: $header-color
 
-h2
-  font-size: 1.7rem
-  // font-weight: 600
-  text-transform: uppercase
-
 section
   padding-top: 5%
-  height: 100vh
+  height: clamp(80vh, 100%, 100vh)
 
 main, header, footer
   padding-left: 7%
   padding-right: 7%
+
+.flex
+  display: flex
+  justify-content: space-between
+
+.section__header
+  font-size: 1.9rem
+  font-weight: 500
+  text-transform: uppercase
+  text-align: center
+  margin-bottom: 3%
+
+.menu
+  &-item
+    font-weight: 600
+    padding-right: 2%
+    &:hover
+      color: $links

@@ -1,2 +1,17 @@
 .footer
-  background-color: black
+  background-color: $footer-bg
+  padding-top: 2%
+  padding-bottom: 1%
+  &__menu
+    & .menu-item
+      display: block
+      // border-bottom: 1px solid $text
+      margin-bottom: 2%
+  &__text
+    text-align: center
+  &__contacts
+    & p
+      margin-bottom: 3%
+    &-item
+      &:hover
+        color: $links
