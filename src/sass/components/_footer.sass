@@ -3,15 +3,21 @@
   padding-top: 2%
   padding-bottom: 1%
   &__menu
+    flex-basis: 40%
     & .menu-item
       display: block
-      // border-bottom: 1px solid $text
+      font-weight: 400
       margin-bottom: 2%
   &__text
+    flex-basis: 20%
     text-align: center
   &__contacts
-    & p
+    flex-basis: 40%
+    padding-left: 23%
+    & p:first-child
       margin-bottom: 3%
+      font-size: 1.1rem
     &-item
+      margin-bottom: 3%
       &:hover
         color: $links

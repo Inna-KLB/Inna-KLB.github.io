@@ -2,10 +2,28 @@
   .project
     margin-bottom: 3%
     &__description
-      flex-basis: 50%
-      align-self: center
+      flex-basis: 55%
+      // align-self: center
+      &-text
+        margin-bottom: 1%
+      &-list
+        width: 100%
+        & li
+          list-style: lower-latin inside
+    &__name
+      font-size: 1.2rem
+      margin-bottom: 2%
+      font-weight: 600
+      &::after
+        display: block
+        content: ''
+        width: 50%
+        height: 1px
+        background-color: $header-color
+      // text-align: center
     &__img
       flex-basis: 40%
+      align-self: flex-end
       & img
         width: 100%
       & .links
